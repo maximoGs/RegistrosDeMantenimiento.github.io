@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const serviceReason = document.getElementById('serviceReason').value;
         const observations = document.getElementById('observations').value.trim() || 'Ninguna';
 
+        // Inspección Rápida
+        const shockAbsorbers = document.getElementById('shockAbsorbers').value;
+        const radiator = document.getElementById('radiator').value;
+        const timingBelt = document.getElementById('timingBelt').value;
+        const tires = document.getElementById('tires').value;
+
         // Número de destino (con código de país, sin el + según la API de WhatsApp, pero la URL wa.me acepta el + o lo omite. Usaremos 5492617094195)
         const phoneNumber = '5492617094195';
 
@@ -33,6 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
 • Patente/Dominio: ${carPlate}
 • Kilometraje: ${carMileage} km
 • VIN: ${carVin}
+
+*🔍 INSPECCIÓN RÁPIDA*
+• Amortiguadores: ${shockAbsorbers}
+• Radiador: ${radiator}
+• Correa de Distribución: ${timingBelt}
+• Cubiertas: ${tires}
 
 *📋 ESTADO Y MOTIVO*
 • Motivo de Ingreso: ${serviceReason}
