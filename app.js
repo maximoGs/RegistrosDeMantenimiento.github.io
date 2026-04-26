@@ -23,8 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const radiator = document.getElementById('radiator').value;
         const timingBelt = document.getElementById('timingBelt').value;
         const tires = document.getElementById('tires').value;
+        const brakePads = document.getElementById('brakePads').value;
+        const battery = document.getElementById('battery').value;
+        const oilLevel = document.getElementById('oilLevel').value;
+        const brakeFluid = document.getElementById('brakeFluid').value;
+        const coolant = document.getElementById('coolant').value;
+        const warningLights = document.getElementById('warningLights').value;
 
-        // Número de destino (con código de país, sin el + según la API de WhatsApp, pero la URL wa.me acepta el + o lo omite. Usaremos 5492617094195)
+        // Número de destino
         const phoneNumber = '5492617094195';
 
         // Construir el mensaje formateado
@@ -45,6 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 • Radiador: ${radiator}
 • Correa de Distribución: ${timingBelt}
 • Cubiertas: ${tires}
+• Pastillas de Freno: ${brakePads}
+• Batería: ${battery}
+
+*💧 FLUIDOS Y TESTIGOS*
+• Nivel de Aceite: ${oilLevel}
+• Líquido de Frenos: ${brakeFluid}
+• Refrigerante: ${coolant}
+• Testigos en Tablero: ${warningLights}
 
 *📋 ESTADO Y MOTIVO*
 • Motivo de Ingreso: ${serviceReason}
